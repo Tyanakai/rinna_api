@@ -17,7 +17,3 @@ class TestMain(unittest.TestCase):
         filename = response.json()["filename"]
         self.assertEqual(main.prediction(filename, output_size=20), {"output was saved"})
 
-if __name__=="__main__":
-    unittest.main()
-
-

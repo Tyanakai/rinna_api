@@ -13,6 +13,7 @@ class Rinna():
         self.tokenizer = T5Tokenizer.from_pretrained("rinna/japanese-gpt2-medium")
 
     def generate(self, input_tensor, output_size):
+
         output_tensors = self.model.generate(
             input_ids=input_tensor,
             max_length=int(output_size),
@@ -25,6 +26,7 @@ class Rinna():
             pad_token_id=self.tokenizer.pad_token_id,
             num_return_sequences=1
             )
+
         return output_tensors
 
     def tokenize(self, data):

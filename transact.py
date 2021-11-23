@@ -25,7 +25,7 @@ def load_text(path: str):
 def save_input(data: schemas.Input):
     filename = "text" + datetime.datetime.now().strftime("%m%d%H%M") + ".txt"
     path = os.path.join(INPUT, filename)
-    save_text(data, path)
+    save_text(data.dict()["text"], path)
     return filename
 
 def load_input(filename: str):
@@ -35,7 +35,7 @@ def load_input(filename: str):
     data = load_text(path)
     return data
 
-def save_output(data: schemas.Output, filename: str):
+def save_output(data: str, filename: str):
     path = os.path.join(OUTPUT, filename)
     save_text(data, path)
 
