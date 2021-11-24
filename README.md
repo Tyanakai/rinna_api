@@ -9,7 +9,7 @@
 1. upload apiよりtextファイルをData storageのinputフォルダにアップロードする。
 2. predict apiからfilenameを指定すると、非同期で以下のタスクを行う。<br>
 ――Data storageからtextファイルのダウンロード、Rinnaに入力、文章生成、outputフォルダにアップロード
-3. download apiからfilenamaを指定すると、生成された文章をoutputフォルダからダウンロードする。
+3. download apiからfilenameを指定すると、生成された文章をoutputフォルダからダウンロードする。
 
 ## Usage
 ### Installation
