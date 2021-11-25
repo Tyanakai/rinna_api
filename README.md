@@ -29,3 +29,9 @@ $ uvicorn main:app
 起動後、`127.0.0.1/docs`でSwagger UIを使用できます。
 
 ![swagger](https://user-images.githubusercontent.com/81244428/143162944-9bc40e0a-c9a5-4834-95cc-b3fd8f8e8b7d.PNG)
+
+### Test
+testsディレクトリ内の全てのテストケースを実行します。
+```
+$ python -m unittest discover tests
+```
