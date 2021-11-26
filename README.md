@@ -12,7 +12,7 @@
 3. download apiでfilenameを指定すると、生成された文章をoutputフォルダからダウンロードする。
 
 ## Usage
-### Installation
+###  Installation
 デプロイする環境下で以下のコマンドを入力して下さい。
 ```
 $ git clone https://github.com/Tyanakai/rinna_api.git
@@ -21,7 +21,7 @@ $ cd rinna_api
 ```
 $ pip install -r requirements.txt
 ```
-### Launch
+###  Launch
 起動するには以下のコマンドを入力して下さい。
 ```
 $ uvicorn main:app
@@ -30,7 +30,7 @@ $ uvicorn main:app
 
 ![swagger](https://user-images.githubusercontent.com/81244428/143162944-9bc40e0a-c9a5-4834-95cc-b3fd8f8e8b7d.PNG)
 
-### Test
+###  Test
 以下のコマンドでtestsディレクトリ内の全てのテストケースを実行します。
 ```
 $ python -m unittest discover tests
